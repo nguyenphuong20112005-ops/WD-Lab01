@@ -1,42 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bài 5 - Image + Text Demonstration</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1 align="center">IMAGES</h1>
 
-    <hr>
+    <hr />
 
-    <!-- Khối 1 -->
+    <section>
+      <h2>Hình 1: Núi tuyết hùng vĩ</h2>
 
-        <figure>
-            <img src="images/mountain.jpg"
-                 alt="The snow-capped mountain peak stands out against the blue sky."
-                 width="300">
+      <figure>
+        <img
+          src="images/mountain.jpg"
+          alt="Đỉnh núi phủ tuyết trắng"
+          width="300"
+        />
+        <figcaption>Hình 1: Núi tuyết phủ trắng đỉnh</figcaption>
+      </figure>
 
-        <p>
-            The photograph captures a snow-capped peak standing out
-             against a deep blue sky, a testament to the majestic and
-              pristine beauty of the high-mountain landscape.
-        </p>
+      <p>
+        Bức ảnh trên mô tả đỉnh núi phủ đầy tuyết trắng nổi bật giữa nền trời
+        xanh thẳm.
+      </p>
     </section>
 
-    <hr>
+    <hr />
 
     <!-- Khối 2 -->
+    <section>
+      <h2>Hình 2: Núi tuyết hùng vĩ</h2>
 
-        <figure>
-            <img src="images/mountain.jpg"
-                 alt="The snow-capped mountain peak stands out against the blue sky."
-                 width="300">
+      <figure>
+        <img
+          src="images/mountain2.jpg"
+          alt="Núi Phú sĩ vào mùa xuân"
+          width="300"
+        />
+        <figcaption>Hình 2: Núi Phú Sĩ vào mùa xuân</figcaption>
+      </figure>
 
-        <p>
-            The photograph captures a snow-capped peak standing out
-             against a deep blue sky, a testament to the majestic and
-              pristine beauty of the high-mountain landscape.
-        </p>
-</body>
+      <p>
+        Bức ảnh thứ hai thể hiện dãy núi Phú Sĩ soi bóng xuống mặt hồ phẳng lặng
+        như gương.
+      </p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Giải thích parent-child giữa figure, img và figcaption</h2>
+
+      <p>Trong mỗi khối hình ở trên, cấu trúc HTML có dạng:</p>
+
+      <pre>
+&lt;figure&gt;
+    &lt;img src="..." alt="..."&gt;
+    &lt;figcaption&gt;...&lt;/figcaption&gt;
+&lt;/figure&gt;
+        </pre
+      >
+
+      <h3>Phân tích quan hệ:</h3>
+      <ul>
+        <li>
+          <code>&lt;figure&gt;</code> là parent — thẻ cha trực tiếp bao quanh.
+        </li>
+        <li>
+          <code>&lt;img&gt;</code> và <code>&lt;figcaption&gt;</code> là child —
+          thẻ con trực tiếp của <code>&lt;figure&gt;</code>.
+        </li>
+        <li>
+          <code>&lt;img&gt;</code> và <code>&lt;figcaption&gt;</code> là sibling
+          với nhau — cùng cấp, cùng parent.
+        </li>
+        <li>
+          <code>&lt;img&gt;</code> là descendant của
+          <code>&lt;section&gt;</code>.
+        </li>
+      </ul>
+
+      <h3>Vai trò từng thẻ:</h3>
+      <ul>
+        <li>
+          <code>&lt;section&gt;</code> — nhóm một khối nội dung theo chủ đề
+        </li>
+        <li><code>&lt;figure&gt;</code> — bao quanh ảnh + chú thích</li>
+        <li>
+          <code>&lt;img&gt;</code> — hiển thị ảnh, cần <code>src</code> và
+          <code>alt</code>
+        </li>
+        <li><code>&lt;figcaption&gt;</code> — chú thích cho ảnh</li>
+        <li><code>&lt;p&gt;</code> — đoạn văn mô tả nội dung ảnh</li>
+      </ul>
+    </section>
+
+    <hr />
+  </body>
 </html>

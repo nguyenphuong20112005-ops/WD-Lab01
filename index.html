@@ -1,135 +1,216 @@
-`<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Student of VNU-HCMUS</title>
-</head>
-<body>
+  </head>
+  <body id="top">
     <!-- ========== HEADER ========== -->
     <header>
-        <h1>Student of VNU - HCMUS</h1>
-        <p><em>Final-year student at University of Science — VNU</em></p>
+      <h1>Student of VNU - HCMUS</h1>
+      <p><em>Final-year student at University of Science — VNU</em></p>
 
-        <nav>
-            <a href="#about">About</a> |
-            <a href="#skills">Skills</a> |
-            <a href="#projects">Projects</a> |
-            <a href="#education">Education</a> |
-            <a href="#research">Research</a> |
-            <a href="#contact">Contact</a>
-        </nav>
+      <nav>
+        <a href="#about">About</a> | <a href="#skills">Skills</a> |
+        <a href="#projects">Projects</a> | <a href="#education">Education</a> |
+        <a href="#research">Research</a> |
+        <a href="#contact">Contact</a>
+      </nav>
     </header>
 
-    <hr>
+    <hr />
 
     <!-- ========== MAIN ========== -->
     <main>
+      <!-- ===== ABOUT ===== -->
+      <section id="about">
+        <h2>About Me</h2>
 
-        <!-- ===== ABOUT ===== -->
-        <section id="about">
-            <h2>About Me</h2>
+        <figure>
+          <img
+            src="images/profile.jpg"
+            alt="Ảnh chân dung sinh viên VNU-HCMUS"
+            width="200"
+          />
+          <figcaption>
+            The final-year student at University of Science, VNU
+          </figcaption>
+        </figure>
 
-            <figure>
-                <img src="images/profile.jpg"
-                     alt="VNU-HCMUS"
-                     width="200">
-                <figcaption>The final-years student at University of Science, VNU</figcaption>
-            </figure>
+        <p>I am the final-year student at University of Science - VNU.</p>
 
-            <p>
-                I am the final-years student at University of Science - VNU.
-            </p>
+        <p>
+          I enjoy researching <strong>mathematical physics</strong> and
+          <em>wave equations</em>, while also honing the soft skills needed to
+          prepare for my post-graduation career.
+        </p>
+      </section>
 
-            <p>
-                I enjoy researching mathematical physics and wave equations,
-                 while also honing the soft skills needed to prepare for my
-                  post-graduation career.
-            </p>
-        </section>
+      <hr />
 
-        <hr>
+      <!-- ===== SKILLS ===== -->
+      <section id="skills">
+        <h2>Skills</h2>
 
-        <!-- ===== SKILLS ===== -->
-        <section id="skills">
-            <h2>Skills</h2>
+        <h3>Soft skills</h3>
+        <ul>
+          <li>Basic communication skills</li>
+          <li>Teamwork and time management</li>
+        </ul>
 
-            <h3>Soft skills</h3>
-            <ul>
-                I have basic communication skills and experience using MATLAB and LaTeX.
-            </ul>
+        <h3>Technical skills</h3>
+        <ul>
+          <li><strong>MATLAB</strong> — Numerical simulation, plotting</li>
+          <li><strong>LaTeX</strong> — Scientific writing, math formulas</li>
+        </ul>
+      </section>
 
-        <hr>
+      <hr />
 
-        <!-- ===== PROJECTS ===== -->
-        <section id="projects">
-            <h2>Projects</h2>
+      <!-- ===== PROJECTS ===== -->
+      <section id="projects">
+        <h2>Projects</h2>
 
-            <article>
-                <h3>Graduation thesis — Love wave equations </h3>
-                <figure>
-                    <img src="images/loveequation.jpg"
-                         alt="Wave equation simulation"
-                         width="300">
+        <article>
+          <h3>Graduation thesis — Love wave equations</h3>
+
+          <figure>
+            <img
+              src="images/loveequation.jpg"
+              alt="Mô phỏng phương trình sóng Love"
+              width="300"
+            />
+          </figure>
+
+          <p>
+            I am preparing to work on my
+            <strong>graduation thesis</strong> regarding
+            <em>Love wave equations</em>.
+          </p>
+          <p><em>Status:</em> Preparing outline and reference materials.</p>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- ===== EDUCATION ===== -->
+      <section id="education">
+        <h2>Education</h2>
+
+        <p>My educational journey:</p>
+  <figure>
+            <img
+              src="images/hcmus.jpg"
+              alt="HCMUS"
+              width="300">
+          <figcaption>Ho Chi Minh University of Science, VNU</figcaption>
+
+          </figure>
+        <table border="1" cellpadding="8" cellspacing="0">
+          <thead>
+            <tr>
+              <th>Period</th>
+              <th>School / Educational level</th>
+              <th>Major</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2023 – 2027</td>
+              <td>University of Science — VNU</td>
+              <td>Final-year</td>
+              <td>Studying</td>
+            </tr>
+            <tr>
+              <td>2021 – 2023</td>
+              <td>High school</td>
+              <td>—</td>
+              <td>Graduated</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <hr />
+
+      <!-- ===== RESEARCH ===== -->
+      <section id="research">
+        <h2>Research Interests</h2>
+
+        <p>My research interests:</p>
+
+        <ul>
+          <li>
+            <strong>Love wave equations</strong>
+          </li>
+          <li>
+            <strong>Partial Differential Equations (PDE)</strong>
+          </li>
+          <li><strong>Numerical methods</strong></li>
+        </ul>
+
+        <p>
+          <em>Future direction: Pursue a postgraduate program
+             and participate in research projects on mathematical physics
+              and wave applications.
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- ===== CONTACT ===== -->
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <p>You can contact me by:</p>
+
+        <ul>
+          <li>
+            Tel:
+            <a href="tel:0123456789">0123456789</a>
+          </li>
+          <li>
+            Email:
+            <a href="mailto:23110102@student.hcmus.edu.vn"
+              >23110102@student.hcmus.edu.vn</a
+            >
+          </li>
+        </ul>
+        
+            <h3>Or you can send me a message by:</h3>
+
+            <form>
                 <p>
-                    I am preparing to work on my graduation thesis regarding Love wave equations.
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" placeholder="Nguyễn Văn A">
                 </p>
+
                 <p>
-                    <em>Trạng thái:</em> Đang chuẩn bị đề cương và tài liệu tham khảo.
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="email@example.com">
                 </p>
-           
-        <!-- ===== EDUCATION ===== -->
-        <section id="education">
-            <h2>Education</h2>
 
-            <p>My educational journey:</p>
+                <p>
+                    <label for="message">Content:</label><br>
+                    <textarea id="message" name="message" rows="5" cols="40"></textarea>
+                </p>
 
-            <table border="1" cellpadding="8" cellspacing="0">
-                <thead>
-                    <tr>
-                        <th>Period</th>
-                        <th>School / Educational level</th>
-                        <th>Major</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>2023 – 2027</td>
-                        <td>University of Science — VNU</td>
-                        <td>Final-years</td>
-                    </tr>
-                    <tr>
-                        <td>2021 – 2023</td>
-                        <td>High school</td>
-                        <td>—</td>
-                        <td>Graduated</td>
-                    </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <hr>
-
-        <!-- ===== CONTACT ===== -->
-        <section id="contact">
-            <h2>Contact</h2>
-
-            <p>You can contact with me by:</p>
-
-            <ul>
-                <li>
-                    Điện thoại:
-                    <a href="tel:0123456789">0123456789</a>
-                </li>
-                <li>
-                    Email:
-                    <a href="23110102@student.hcmus.edu.vn">student@hcmus.edu.vn</a>
-                </li>
-            </ul>
-
-           
+                <p>
+                    <button type="submit">Send</button>
+                    <button type="reset">Delete</button>
+                </p>
+            </form>
+      </section>
     </main>
 
-    <hr>
-</body>
+    <hr />
+
+    <footer>
+      <p align="center">
+        &copy; 2026 Student of VNU-HCMUS — WD-Lab01 Assignment
+      </p>
+    </footer>
+  </body>
 </html>

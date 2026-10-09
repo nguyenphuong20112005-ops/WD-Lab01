@@ -1,0 +1,656 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interview Questions - WD Lab01</title>
+  </head>
+  <body id="top">
+    <header>
+      <h1>PHẦN 3 — INTERVIEW QUESTIONS GIẢ ĐỊNH</h1>
+
+      <nav>
+        <a href="#ly-thuyet">Lý thuyết</a> |
+        <a href="#code-mini">Code Interview</a>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <section id="ly-thuyet">
+        <h1>Phần 1. Các câu hỏi phỏng vấn</h1>
+
+        <hr />
+
+        <article>
+          <h2>Câu 1: Tag và element khác nhau như thế nào? Cho ví dụ.</h2>
+          <ul>
+            <li>
+              Tag là thẻ đánh dấu cú pháp HTML, ví dụ
+              <code>&lt;p&gt;</code>, <code>&lt;/p&gt;</code>,
+              <code>&lt;h1&gt;</code>.
+            </li>
+            <li>
+              Element là toàn bộ cấu trúc hoàn chỉnh gồm thẻ mở + nội dung + thẻ
+              đóng.
+            </li>
+          </ul>
+          <p> Ví dụ:  Trong file <code>bai1.html</code>:</p>
+          <pre>
+&lt;h1&gt;Trường Đại học Khoa học Tự Nhiên - ĐHQG.TPHCM&lt;/h1&gt;</pre
+          >
+          <ul>
+            <li>
+              <code>&lt;h1&gt;</code> và <code>&lt;/h1&gt;</code> là hai tag.
+            </li>
+            <li>Cả dòng là một element.</li>
+          </ul>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>Câu 2: Vì sao HTML document nên có &lt;!DOCTYPE html&gt;?</h2>
+          <p>
+            <code>&lt;!DOCTYPE html&gt;</code> khai báo tài liệu là sử dụng HTML
+            chuẩn hiển thị hiện đại thay vì chế độ tương thích cũ.
+          </p>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 3: Vai trò của &lt;head&gt; và &lt;body&gt; khác nhau như thế
+            nào?
+          </h2>
+          <ul>
+            <li>
+              <code>&lt;head&gt;</code>
+              : Chứa thông tin cấu hình và metadata của trang bao gồm
+              <code>title</code>, <code>meta charset</code>,
+              <code>meta viewport</code>, link CSS.
+            </li>
+            <li>
+              <code>&lt;body&gt;</code>
+              : Chứa nội dung hiển thị trên trang như heading, paragraph, image
+              , table và form.
+            </li>
+          </ul>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>Câu 4: charset="UTF-8" khác với lang="en" ở điểm nào?</h2>
+          <ul>
+            <li>
+              code>charset="UTF-8"</code>
+              : Xác định cách mã hóa ký tự — giúp hiển thị đúng
+              văn bản.
+            </li>
+            <li>
+              <code>lang="en"</code>
+              : Khai báo ngôn ngữ nội dung chính — hỗ trợ screen
+              reader, SEO, trình dịch.
+            </li>
+          </ul>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>Câu 5: Vì sao cần meta viewport trong tài liệu HTML hiện đại?</h2>
+          <p>
+            <code>meta viewport</code> giúp trang
+           sử dụng chiều rộng phù hợp với màn hình mobile, thay vì mặc định 
+           hiển thị viewpoint như trên desktop.
+          </p>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 6: Phân biệt paired element và void element. Vì sao &lt;img&gt;
+            không có closing tag?
+          </h2>
+          <ul>
+            <li>
+              Paired element thường có thẻ mở + nội dung + thẻ đóng.
+              Ví dụ: <code>&lt;p&gt;...&lt;/p&gt;</code>.
+            </li>
+            <li>
+              Void element chỉ có thẻ mở, không có nội dung và
+              thẻ đóng. Ví dụ: <code>&lt;img&gt;</code>,
+              <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>,
+              <code>&lt;meta&gt;</code>, <code>&lt;input&gt;</code>,...
+            </li>
+          </ul>
+          <p>
+            <code>&lt;img&gt;</code> không có closing tag vì nó
+            không chứa nội dung text như paragraph.
+          </p>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 7: Attribute nằm ở đâu? Giải thích href, src, alt, id và class.
+          </h2>
+          <p>
+            Attribute nằm trong thẻ mở, sau
+            tên thẻ, dạng <code>name="value"</code> và cung cấp thông tin 
+            bổ sung cho element.
+          </p>
+          <ul>
+            <li>
+              <code>href</code>: Xác định 
+              đích đến của liên kết.
+            </li>
+            <li>
+              <code>src</code>: Xác định 
+              nguồn tài nguyên ví dụ như đường dẫn hình ảnh.
+            </li>
+            <li>
+              <code>alt</code>: Text mô tả ảnh cho screen reader.
+            </li>
+            <li>
+               <code>id</code>: Định danh duy nhất 
+            cho 1 element.
+            </li>
+            <li>
+               <code>class</code>: Nhóm nhiều element cùng loại.
+            </li>
+          </ul>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 8: Parent, child, sibling, descendant là gì? Chỉ ra trong source
+            của bạn.
+          </h2>
+          <ul>
+            <li> Parent : Thẻ cha trực tiếp bao quanh.</li>
+            <li> Child : Thẻ con trực tiếp nằm trong parent.</li>
+            <li> Sibling : Các thẻ cùng cấp, cùng parent.</li>
+            <li>
+               Descendant : Mọi thẻ nằm trong parent ở bất kỳ cấp
+              nào.
+            </li>
+          </ul>
+          <p>Chỉ ra trong source:  Trong <code>index.html</code>:</p>
+          <pre>
+&lt;section id="about"&gt;              &lt;là parent của figure &gt;
+    &lt;h2&gt;About Me&lt;/h2&gt;
+    &lt;figure&gt;                       &lt;là child của section &gt;
+        &lt;img src="images/profile.jpg" alt="..." width="..."&gt;   &lt;là descendant của section &gt;
+        &lt;figcaption&gt;...&lt;/figcaption&gt;                &lt;là sibling của img &gt;
+    &lt;/figure&gt;
+&lt;/section&gt;</pre
+          >
+          <ul>
+            <li>
+              <code>section</code> là  parent  của
+              <code>figure</code>.
+            </li>
+            <li>
+              <code>img</code> và <code>figcaption</code> là
+               child  của <code>figure</code>.
+            </li>
+            <li>
+              <code>img</code> và <code>figcaption</code> là
+               sibling  với nhau.
+            </li>
+            <li>
+              <code>img</code> là  descendant  của
+              <code>section</code>.
+            </li>
+          </ul>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 9: Tại sao nesting phải đóng từ trong ra ngoài? Cho ví dụ
+            crossing tags sai.
+          </h2>
+          <p>
+            Các element phải được lồng đúng theo thứ tự 
+            để HTML có được cấu trúc hợp lệ. Element mở sau phải 
+            được đóng trước.
+          </p>
+          <p>Ví dụ về crossing tags sai: </p>
+          <pre>
+&lt;p&gt;Learning &lt;strong&gt;HTML&lt;/p&gt;&lt;/strong&gt;</pre
+          >
+          <p>
+            → <code>&lt;p&gt;</code> mở trước nhưng đóng trước
+            <code>&lt;strong&gt;</code>.
+          </p>
+          <p>Sửa lại cho đúng: </p>
+          <pre>
+&lt;p&gt;Learning &lt;strong&gt;HTML&lt;/strong&gt;&lt;/p&gt;</pre
+          >
+          <p><code>&lt;strong&gt;</code> mở sau, đóng trước.</p>
+        </article>
+        <hr />
+
+        <article>
+          <h2>Câu 10: Khi nào dùng &lt;p&gt;, &lt;br&gt; và &lt;hr&gt;?</h2>
+          <ul>
+            <li>
+               <code>&lt;p&gt;</code>:
+                Dùng để tạo một đoạn văn.
+            </li>
+            <li>
+               <code>&lt;br&gt;</code>:
+               Dùng để xuống dòng trong cùng một 
+               nội dung khi việc ngắt dòng có ý nghĩa.
+            </li>
+            <li>
+               <code>&lt;hr&gt;</code>:
+            Biểu thị sự chuyển chủ đề hoặc ngắt nội dung theo chủ đề,
+            thường được trình duyệt hiển thị thành đường kẻ ngang.
+            </li>
+          </ul>
+         
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 11: Vì sao không nên nhảy heading từ h1 xuống h3 chỉ để chữ nhỏ
+            hơn?
+          </h2>
+          <p>
+            Heading thể hiện cấu trúc phân cấp của nội dung,
+            không phải kích thước chữ.
+          </p>
+          <p>Khi nhảy từ <code>h1</code> xuống <code>h3</code>:</p>
+          <ul>
+            <li> Sẽ phá vỡ logic phân cấp.</li>
+            <li> Khi đó screen reader đọc sai cấu trúc.</li>
+            <li> Để điều chỉnh kích thước chữ nên dùng CSS.</li>
+          </ul>
+        
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 12: External link, relative link và fragment link khác nhau như
+            thế nào?
+          </h2>
+          <ul>
+            <li>
+               External link : Đường dẫn
+               liên kết đến website khác. Ví dụ:
+              <code>&lt;a href="https://github.com"&gt;</code>
+            </li>
+            <li>
+               Relative link : Đường dẫn
+               tương đối đến file hoặc thư mục khác trong dự án. Ví dụ:
+              <code>&lt;a href="bai1.html"&gt;</code>
+            </li>
+            <li>
+               Fragment link : Liên kết 
+               đến chỗ có định danh trong trang, thường dùng #id . Ví dụ:
+              <code>&lt;a href="#about"&gt;</code>
+            </li>
+          </ul>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>Câu 13: alt của &lt;img&gt; khác figcaption ở điểm nào?</h2>
+          <ul>
+            <li>
+               <code>alt</code>:
+                <code>alt</code> là văn bản thay thế cho hình ảnh
+                 khi hình ảnh bị lỗi.
+            </li>
+            <li>
+               <code>figcaption</code></strong
+              >: Hiển thị chú thích bên dưới ảnh.
+            </li>
+          </ul>
+          
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 14: Semantic HTML là gì? Vì sao
+            header/nav/main/section/article/footer tốt hơn chỉ dùng div?
+          </h2>
+          <p>
+             Semantic HTML là dùng các element
+             có ý nghĩa  mô tả vai trò nội dung.
+          </p>
+          <p> Lợi ích của việc sử dụng header/nav/main/section/article/footer
+            thay vì chỉ dùng div: </p>
+          <ul>
+            <li>Các element này sẽ giúp screen reader 
+                hiểu rõ cấu trúc hơn.
+            </li>
+            <li>Code sẽ dễ đọc hơn, nhìn thẻ sẽ biết vai trò.</li>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 15: Giải thích hierarchy đúng của table: table → thead/tbody →
+            tr → th/td.
+          </h2>
+          <p>Cấu trúc phân cấp:</p>
+          <pre>
+table
+├── thead
+│   └── tr
+│       ├── th
+│       └── th
+└── tbody
+    └── tr
+        ├── td
+        └── td</pre
+          >
+          <ul>
+            <li>
+               <code>table</code>: Bao toàn bộ bảng.
+            </li>
+            <li>
+               <code>thead</code>: Tiêu đề cột.
+            </li>
+            <li>
+               <code>tbody</code>: Dữ liệu.
+            </li>
+            <li>
+               <code>tr</code>: Một hàng.
+            </li>
+            <li>
+               <code>th</code>: Ô tiêu đề.
+            </li>
+            <li>
+               <code>td</code>: Ô dữ liệu.
+            </li>
+          </ul>
+          
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 16: Quan hệ giữa &lt;label for="email"&gt; và &lt;input
+            id="email"&gt; là gì?
+          </h2>
+          <p>
+            <code>for</code> của <code>&lt;label&gt;</code> phải
+             liên kết với <code>id</code> tương ứng của 
+            <code>&lt;input&gt;</code> để
+             khi người dùng nhấn vào label, 
+             trình duyệt có thể chuyển focus đến trường nhập liệu.
+          </p>
+         
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 17: Tại sao form trong Lab01 chưa thực sự gửi/lưu đơn hàng hoặc
+            thông tin người dùng?
+          </h2>
+          <p>
+            Form trong Lab01 là  form tĩnh, chỉ định nghĩa giao diện nhập liệu
+            và cách gửi dữ liệu. Để xử lý đơn hàng hoặc lưu thông tin, thường cần 
+            có endpoint bên chỗ server, backend để nhận và xử lý dữ liệu, cùng cơ
+            chế lưu trữ phù hợp.
+          </p>
+          
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 18: Vì sao browser vẫn có thể render HTML sai? Developer cần
+            kiểm tra gì ngoài output?
+          </h2>
+          <p>
+            Browser thường cố gắng sửa hoặc diễn giải với HTML lỗi,
+             nó tự động sửa lỗi sai và cố render. Điều này khiến HTML lỗi vẫn hiển thị
+             trông có vẻ đúng , nhưng cấu trúc DOM bên trong có
+            thể  sai khác dự định .
+          </p>
+          <p> Developer cần kiểm tra: </p>
+          <ol>
+            <li>
+               Cấu trúc và thứ tự đóng mở tag.
+            </li>
+            <li>
+               Đường dẫn ảnh, liên kết và tài nguyên.
+            </li>
+            <li>
+               Hiển thị trên các kích thước màn hình 
+               khác nhau và khả năng sử dụng bằng bàn phím.
+            </li>
+          </ol>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 19: XAMPP/Apache đóng vai trò gì trong Lab01? localhost là gì?
+          </h2>
+          <ul>
+            <li>
+               XAMPP là bộ cung cấp môi trường phát triển 
+               web cục bộ. Bộ này gồm Apache + MySQL + PHP +
+              Perl. Trong Lab01 chỉ dùng  Apache .
+            </li>
+            <li>
+               Apache là web server chạy local, có thể nhận 
+               HTTP request và phục vụ cho file HTML trong dự án.
+            </li>
+            <li>
+               localhost là tên máy chủ hay địa chỉ IP 
+              trở về chính thiết bị đang chạy.
+            </li>
+          </ul>
+          
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>
+            Câu 20: git add, git commit, git pull và git push khác nhau như thế
+            nào?
+          </h2>
+          <ul>
+            <li>
+               <code>git add .</code>:
+                Đưa các thay đổi vào staging area để chuẩn bị
+              commit.
+            </li>
+            <li>
+               <code>git commit -m "msg"</code>:
+                Lưu các thay đổi trong staging thành
+               một phiên bản trong lịch sử Git ở máy local.
+            </li>
+            <li>
+               <code>git pull</code>:
+               Lấy thay đổi từ remote (GitHub) và tích 
+               hợp vào nhánh local hiện tại.
+            </li>
+            <li>
+               <code>git push</code>:
+                Đẩy các commit từ local lên remote repository.
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <hr />
+
+      <!-- ===== PHẦN B: 4 CÂU CODE ===== -->
+      <section id="code-mini">
+        <h1>Phần 2. Code Interview Mini-Questions</h1>
+
+        <hr />
+
+        <article>
+          <h2>Code Interview A</h2>
+
+          <h3>Code lỗi:</h3>
+          <pre>
+&lt;p&gt;Learning &lt;strong&gt;HTML&lt;/p&gt;&lt;/strong&gt;</pre
+          >
+
+          <h3>Lỗi:</h3>
+          <p>
+            Nesting sai vì <code>&lt;strong&gt;</code> mở sau nhưng đóng trước
+            <code>&lt;p&gt;</code>.
+          </p>
+
+          <h3>Sửa lại thành đúng:</h3>
+          <pre>
+&lt;p&gt;Learning &lt;strong&gt;HTML&lt;/strong&gt;&lt;/p&gt;</pre
+          >
+
+          <h3>Giải thích:</h3>
+          <p>
+            Nguyên tắc  Last In, First Out: Thẻ mở sau
+            phải đóng trước. <code>&lt;strong&gt;</code> là thẻ con của
+            <code>&lt;p&gt;</code>, nên phải đóng
+            <code>&lt;strong&gt;</code> trước khi đóng <code>&lt;p&gt;</code>.
+          </p>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>Code Interview B</h2>
+
+          <h3>Code lỗi:</h3>
+          <pre>
+&lt;img src="images/product.png"&gt;
+&lt;a href=#products&gt;Products&lt;/a&gt;</pre
+          >
+
+          <h3>Lỗi:</h3>
+          <ol>
+            <li>
+              <code>&lt;img&gt;</code> thiếu <code>alt</code> nên vi phạm
+              accessibility.
+            </li>
+            <li>
+              <code>href=#products</code> thiếu dấu ngoặc kép nên không chuẩn
+              HTML hiện đại.
+            </li>
+          </ol>
+
+          <h3>Sửa lại thành đúng:</h3>
+          <pre>
+&lt;img src="images/product.png" alt="Ảnh sản phẩm"&gt;
+&lt;a href="#products"&gt;Products&lt;/a&gt;</pre
+          >
+
+          <h3>Giải thích:</h3>
+          <ul>
+            <li>
+              <code>alt</code> bắt buộc cho <code>&lt;img&gt;</code> để screen
+              reader đọc và hiển thị khi ảnh lỗi.
+            </li>
+            <li>Attribute values phải có quotes theo chuẩn HTML hiện đại.</li>
+          </ul>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>Code Interview C</h2>
+
+          <h3>Code lỗi:</h3>
+          <pre>
+&lt;label for="email"&gt;Email&lt;/label&gt;
+&lt;input id="student-email" name="email" type="email"&gt;</pre
+          >
+
+          <h3>Lỗi:</h3>
+          <p>
+            <code>for="email"</code> không khớp
+            <code>id="student-email"</code> nên label không liên kết với input.
+          </p>
+
+          <h3>Sửa lại thành đúng:</h3>
+          <pre>
+&lt;label for="student-email"&gt;Email&lt;/label&gt;
+&lt;input id="student-email" name="email" type="email"&gt;</pre
+          >
+
+          <h3>Giải thích:</h3>
+          <p>
+            <code>for</code> của <code>&lt;label&gt;</code> phải
+             khớp chính xác  với <code>id</code> của
+            <code>&lt;input&gt;</code> để click label focus vào input và screen
+            reader đọc đúng.
+          </p>
+        </article>
+
+        <hr />
+
+        <article>
+          <h2>Code Interview D</h2>
+
+          <h3>Code lỗi:</h3>
+          <pre>
+&lt;a href="#projects"&gt;Projects&lt;/a&gt;
+
+&lt;section id="project"&gt;
+    &lt;h2&gt;Projects&lt;/h2&gt;
+&lt;/section&gt;</pre
+          >
+
+          <h3>Lỗi:</h3>
+          <p>
+            <code>href="#projects"</code> (có <code>s</code>) không khớp
+            <code>id="project"</code> (không <code>s</code>).
+          </p>
+
+          <h3>Sửa lại thành đúng:</h3>
+          <pre>
+&lt;a href="#projects"&gt;Projects&lt;/a&gt;
+
+&lt;section id="projects"&gt;
+    &lt;h2&gt;Projects&lt;/h2&gt;
+&lt;/section&gt;</pre
+          >
+
+          <h3>Giải thích:</h3>
+          <p>
+            Fragment link <code>#X</code> phải khớp
+             chính xác  với <code>id="X"</code>. Nếu sai ký tự →
+            browser không tìm thấy → click không nhảy đi đâu cả.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <hr />
+
+  </body>
+</html>
